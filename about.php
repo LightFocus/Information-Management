@@ -263,7 +263,7 @@
           <ul class="spec-list">
             <li class="spec">本地Atom编写 + MAMP调试</span></li>
             <li class="spec small">部署于阿里云ECS</span></li>
-            <li class="spec small last">借鉴Apple.com部分前端</li>
+            <li class="spec small last">借鉴部分Apple.com前端</li>
           </ul>
         </div>
       </div>
@@ -273,7 +273,7 @@
 			<div class="section-content">
 				<h3 class="section-headline">实力，数据为证。</h3>
 				<div class="row">
-					<p class="intro column large-9 medium-12">PHP被广泛用于服务器端。看看与 PHP 和其他语言的对比你就知道了。</p>
+					<p class="intro column large-9 medium-12">PHP被广泛用于服务器端。看看 PHP 和其他语言的对比你就知道了。</p>
 				</div>
 				<div class="infographics">
 					<div class="row performance-graph autodesk-maya">
@@ -328,7 +328,7 @@
               <div class="section-content pad-bottom no-pad-top">
                 <ul class="spec-list">
                   <li class="spec">由Twitter的Mark Otto和Jacob Thornton编写</span></li>
-                  <li class="spec small">GitHub上面被标记为“Starred”次数排名第二最多的项目</span></li>
+                  <li class="spec small">GitHub上面被标记为“Starred”次数排名第二多的项目</span></li>
                   <li class="spec small last">将移动设备优先作为设计方针，强调响应式设计</li>
                 </ul>
               </div>
