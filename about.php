@@ -1,210 +1,27 @@
 <!DOCTYPE html>
-<!-- saved from url=(0034)https://www.apple.com/cn/imac-pro/ -->
 <html>
-<head>
+ <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.apple.com/cn/imac-pro/">
-	<link rel="alternate" href="https://www.apple.com/ae-ar/imac-pro/" hreflang="ar-AE"><link rel="alternate" href="https://www.apple.com/ae/imac-pro/" hreflang="en-AE"><link rel="alternate" href="https://www.apple.com/am/imac-pro/" hreflang="en-AM"><link rel="alternate" href="https://www.apple.com/at/imac-pro/" hreflang="de-AT"><link rel="alternate" href="https://www.apple.com/au/imac-pro/" hreflang="en-AU"><link rel="alternate" href="https://www.apple.com/befr/imac-pro/" hreflang="fr-BE"><link rel="alternate" href="https://www.apple.com/benl/imac-pro/" hreflang="nl-BE"><link rel="alternate" href="https://www.apple.com/bg/imac-pro/" hreflang="bg-BG"><link rel="alternate" href="https://www.apple.com/bh/imac-pro/" hreflang="en-BH"><link rel="alternate" href="https://www.apple.com/br/imac-pro/" hreflang="pt-BR"><link rel="alternate" href="https://www.apple.com/bw/imac-pro/" hreflang="en-BW"><link rel="alternate" href="https://www.apple.com/ca/fr/imac-pro/" hreflang="fr-CA"><link rel="alternate" href="https://www.apple.com/ca/imac-pro/" hreflang="en-CA"><link rel="alternate" href="https://www.apple.com/cf/imac-pro/" hreflang="fr-CF"><link rel="alternate" href="https://www.apple.com/chde/imac-pro/" hreflang="de-CH"><link rel="alternate" href="https://www.apple.com/chfr/imac-pro/" hreflang="fr-CH"><link rel="alternate" href="https://www.apple.com/ci/imac-pro/" hreflang="fr-CI"><link rel="alternate" href="https://www.apple.com/cl/imac-pro/" hreflang="es-CL"><link rel="alternate" href="https://www.apple.com/cm/imac-pro/" hreflang="fr-CM"><link rel="alternate" href="https://www.apple.com/cn/imac-pro/" hreflang="zh-CN"><link rel="alternate" href="https://www.apple.com/co/imac-pro/" hreflang="es-CO"><link rel="alternate" href="https://www.apple.com/cz/imac-pro/" hreflang="cs-CZ"><link rel="alternate" href="https://www.apple.com/de/imac-pro/" hreflang="de-DE"><link rel="alternate" href="https://www.apple.com/dk/imac-pro/" hreflang="da-DK"><link rel="alternate" href="https://www.apple.com/ee/imac-pro/" hreflang="et-EE"><link rel="alternate" href="https://www.apple.com/eg/imac-pro/" hreflang="en-EG"><link rel="alternate" href="https://www.apple.com/es/imac-pro/" hreflang="es-ES"><link rel="alternate" href="https://www.apple.com/fi/imac-pro/" hreflang="fi-FI"><link rel="alternate" href="https://www.apple.com/fr/imac-pro/" hreflang="fr-FR"><link rel="alternate" href="https://www.apple.com/gn/imac-pro/" hreflang="fr-GN"><link rel="alternate" href="https://www.apple.com/gq/imac-pro/" hreflang="fr-GQ"><link rel="alternate" href="https://www.apple.com/gr/imac-pro/" hreflang="el-GR"><link rel="alternate" href="https://www.apple.com/gw/imac-pro/" hreflang="en-GW"><link rel="alternate" href="https://www.apple.com/hk/en/imac-pro/" hreflang="en-HK"><link rel="alternate" href="https://www.apple.com/hk/imac-pro/" hreflang="zh-HK"><link rel="alternate" href="https://www.apple.com/hr/imac-pro/" hreflang="hr-HR"><link rel="alternate" href="https://www.apple.com/hu/imac-pro/" hreflang="hu-HU"><link rel="alternate" href="https://www.apple.com/id/imac-pro/" hreflang="id-ID"><link rel="alternate" href="https://www.apple.com/ie/imac-pro/" hreflang="en-IE"><link rel="alternate" href="https://www.apple.com/il/imac-pro/" hreflang="en-IL"><link rel="alternate" href="https://www.apple.com/imac-pro/" hreflang="en-US"><link rel="alternate" href="https://www.apple.com/in/imac-pro/" hreflang="en-IN"><link rel="alternate" href="https://www.apple.com/it/imac-pro/" hreflang="it-IT"><link rel="alternate" href="https://www.apple.com/jo/imac-pro/" hreflang="en-JO"><link rel="alternate" href="https://www.apple.com/jp/imac-pro/" hreflang="ja-JP"><link rel="alternate" href="https://www.apple.com/ke/imac-pro/" hreflang="en-KE"><link rel="alternate" href="https://www.apple.com/kr/imac-pro/" hreflang="ko-KR"><link rel="alternate" href="https://www.apple.com/kw/imac-pro/" hreflang="en-KW"><link rel="alternate" href="https://www.apple.com/la/imac-pro/" hreflang="es-419"><link rel="alternate" href="https://www.apple.com/lae/imac-pro/" hreflang="en-419"><link rel="alternate" href="https://www.apple.com/li/imac-pro/" hreflang="de-LI"><link rel="alternate" href="https://www.apple.com/lt/imac-pro/" hreflang="lt-LT"><link rel="alternate" href="https://www.apple.com/lu/imac-pro/" hreflang="fr-LU"><link rel="alternate" href="https://www.apple.com/lv/imac-pro/" hreflang="lv-LV"><link rel="alternate" href="https://www.apple.com/ma/imac-pro/" hreflang="fr-MA"><link rel="alternate" href="https://www.apple.com/md/imac-pro/" hreflang="en-MD"><link rel="alternate" href="https://www.apple.com/me/imac-pro/" hreflang="en-ME"><link rel="alternate" href="https://www.apple.com/mg/imac-pro/" hreflang="fr-MG"><link rel="alternate" href="https://www.apple.com/mk/imac-pro/" hreflang="en-MK"><link rel="alternate" href="https://www.apple.com/ml/imac-pro/" hreflang="fr-ML"><link rel="alternate" href="https://www.apple.com/mo/imac-pro/" hreflang="zh-MO"><link rel="alternate" href="https://www.apple.com/mt/imac-pro/" hreflang="en-MT"><link rel="alternate" href="https://www.apple.com/mu/imac-pro/" hreflang="fr-MU"><link rel="alternate" href="https://www.apple.com/mx/imac-pro/" hreflang="es-MX"><link rel="alternate" href="https://www.apple.com/my/imac-pro/" hreflang="en-MY"><link rel="alternate" href="https://www.apple.com/mz/imac-pro/" hreflang="en-MZ"><link rel="alternate" href="https://www.apple.com/ne/imac-pro/" hreflang="fr-NE"><link rel="alternate" href="https://www.apple.com/ng/imac-pro/" hreflang="en-NG"><link rel="alternate" href="https://www.apple.com/nl/imac-pro/" hreflang="nl-NL"><link rel="alternate" href="https://www.apple.com/no/imac-pro/" hreflang="no-NO"><link rel="alternate" href="https://www.apple.com/nz/imac-pro/" hreflang="en-NZ"><link rel="alternate" href="https://www.apple.com/om/imac-pro/" hreflang="en-OM"><link rel="alternate" href="https://www.apple.com/ph/imac-pro/" hreflang="en-PH"><link rel="alternate" href="https://www.apple.com/pl/imac-pro/" hreflang="pl-PL"><link rel="alternate" href="https://www.apple.com/pt/imac-pro/" hreflang="pt-PT"><link rel="alternate" href="https://www.apple.com/qa/imac-pro/" hreflang="en-QA"><link rel="alternate" href="https://www.apple.com/ro/imac-pro/" hreflang="ro-RO"><link rel="alternate" href="https://www.apple.com/ru/imac-pro/" hreflang="ru-RU"><link rel="alternate" href="https://www.apple.com/sa-ar/imac-pro/" hreflang="ar-SA"><link rel="alternate" href="https://www.apple.com/sa/imac-pro/" hreflang="en-SA"><link rel="alternate" href="https://www.apple.com/se/imac-pro/" hreflang="sv-SE"><link rel="alternate" href="https://www.apple.com/sg/imac-pro/" hreflang="en-SG"><link rel="alternate" href="https://www.apple.com/si/imac-pro/" hreflang="en-SI"><link rel="alternate" href="https://www.apple.com/sk/imac-pro/" hreflang="sk-SK"><link rel="alternate" href="https://www.apple.com/sn/imac-pro/" hreflang="fr-SN"><link rel="alternate" href="https://www.apple.com/th/imac-pro/" hreflang="th-TH"><link rel="alternate" href="https://www.apple.com/tn/imac-pro/" hreflang="fr-TN"><link rel="alternate" href="https://www.apple.com/tr/imac-pro/" hreflang="tr-TR"><link rel="alternate" href="https://www.apple.com/tw/imac-pro/" hreflang="zh-TW"><link rel="alternate" href="https://www.apple.com/ug/imac-pro/" hreflang="en-UG"><link rel="alternate" href="https://www.apple.com/uk/imac-pro/" hreflang="en-GB"><link rel="alternate" href="https://www.apple.com/vn/imac-pro/" hreflang="en-VN"><link rel="alternate" href="https://www.apple.com/za/imac-pro/" hreflang="en-ZA">
-
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" type="text/css" href="./about/ac-globalnav.built.css">
 	<link rel="stylesheet" type="text/css" href="./about/ac-localnav.built.css">
 	<link rel="stylesheet" type="text/css" href="./about/ac-globalfooter.built.css">
 	<title>About</title>
-	<meta property="analytics-track" content="iMac Pro - Overview">
-	<meta property="analytics-s-channel" content="imac-pro">
-	<meta property="analytics-s-bucket-0" content="appleglobal,appleusimacpro">
-	<meta property="analytics-s-bucket-1" content="apple{COUNTRY_CODE}global,apple{COUNTRY_CODE}imacpro">
-	<meta property="analytics-s-bucket-2" content="apple{COUNTRY_CODE}global">
-	<meta property="analytics-s-bucket-store" content="applestoreww,applestoreapaccnzh">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Apple">
-	<meta property="og:locale" content="zh_CN">
 	<link rel="stylesheet" href="./about/fonts" type="text/css" media="all">
 	<link rel="stylesheet" href="./about/overview.built.css">
-	<link rel="stylesheet" href="./about/overview.built(1).css">
 	<script src="./about/head.built.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="./about/fonts(1)" type="text/css">
 	<link rel="stylesheet" href="./about/sfpro-cn.css">
-
-	<!--[if IE]>
-	<link rel="stylesheet" href="/wss/fonts?family=SF+Pro+SC&amp;weights=200,300,400,500,600&amp;v=1" type="text/css">
-	<link rel="stylesheet" href="https://images.apple.com/cn/global/styles/sfpro-cn-ie.css" />
-	<![endif]-->
-</head>
-<body class="page-overview ac-gn-current-mac show-logo reveal">
-<style>
-	html {
-		margin-top: 40px !important;
-	}
-	body {
-		border-top: 1px solid transparent;
-		margin-top: -1px;
-		position: relative;
-	}
-	html.oldie body {
-  		overflow-x: visible;
-  	}
-	.adv-wrapper {
-		position: absolute;
-		top: -40px;
-		z-index: 9999;
-		background: #444;
-		line-height: 1;
-		top: -40px;
-		width: 100%;
-		right:0;
-		height: 40px;
-		z-index: 9999;
-	}
-	.ac-gn-segmentbar-visible .adv-wrapper {
-		position: absolute;
-		top: -40px;
-	}
-	.ac-gn-segmentbar-visible .macpro-gg .adv-wrapper {
-		top: 0px;
-	}
-	.adv-wrapper .adv-wrapper-text {
-		color: #a8a8aa;
-		display: block;
-		line-height: 40px;
-		overflow: hidden;
-		text-decoration: none;
-		text-overflow: ellipsis;
-		text-align: right;
-		max-width: 976px;
-		margin: 0 auto;
-	}
-
-	.ac-gn-segmentbar-visible .adv-wrapper{
-		background: transparent;
-		width: 20%
-	}
-	.ac-gn-segmentbar-visible .adv-wrapper .adv-wrapper-text {
-		width: 100%;
-		margin-left: 488px;
-		position: absolute;
-		left: -250%;
-		min-width: auto;
-	}
-
-	@media only screen and (max-width: 1023px) {
-		.adv-wrapper {
-			min-width: 20%
-		}
-		.adv-wrapper .adv-wrapper-text {
-			margin-left:auto;
-			width: auto;
-			padding: 0 25px;
-			position: relative;
-			left: 0;
-		}
-		.ac-gn-segmentbar-visible .adv-wrapper .adv-wrapper-text {
-			width: auto;
-			position: relative;
-			padding: 0 12px;
-			left: -6%;
-			margin: 0;
-		}
-		.ac-gn-segmentbar-visible #sonic-automotive.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
-		.ac-gn-segmentbar-visible #ducati.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
-		.ac-gn-segmentbar-visible #mayo-clinic.profiles.platter.ac-gn-current-iphone.full-nav .adv-wrapper .adv-wrapper-text
-		 {
-			left: -27%;
-		}
-	}
-	@media only screen and (max-width: 767px) {
-		.adv-wrapper .adv-wrapper-text {
-			line-height:40px;
-			margin-left:auto;
-			width: auto;
-			padding: 0 16px;
-			position: relative;
-			left: 0;
-		}
-		.ac-gn-segmentbar-visible .adv-wrapper .adv-wrapper-text {
-			width: auto;
-			position: relative;
-			left: 0;
-			padding: 0 16px;
-			margin: 0;
-		}
-		.ac-gn-segmentbar-visible #sonic-automotive.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
-		.ac-gn-segmentbar-visible #ducati.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
-		.ac-gn-segmentbar-visible #mayo-clinic.profiles.platter.ac-gn-current-iphone.full-nav .adv-wrapper .adv-wrapper-text
-		{
-			left: -25%;
-		}
-		.adv-wrapper {
-			top:-44px;
-			height: 44px
-		}
-		.ac-gn-segmentbar-visible .adv-wrapper {
-			top:-44px;
-			height: 44px
-		}
-		.adv-wrapper .adv-wrapper-text {
-			line-height: 44px;
-		}
-		html {
-			margin-top: 44px !important;
-		}
-
-	}
-	.adv-wrapper .adv-wrapper-text {
-		color: #a8a8aa;
-		font-size: 12px;
-		font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-	}
-
-
-	/* Always show in IE8, whether zoom because IE8 doesnt have responsive. */
-	/* hack for IE8 without shop button */
-	/*js no-touch no-svg ie8 no-progressive no-transforms no-tablet no-handheld no-oldTablet no-maskBoxImage no-maskedParallaxAnimation no-webgl no-video no-inlineVideo no-canvas cssFilter no-cssTransition2d no-cssTransition3d ie*/
-
-	html.ie8,html.oldie,html.oldIE {
-		margin-top: 0px !important;
-	}
-	html.ie8 .adv-wrapper,html.oldie .adv-wrapper,html.oldIE .adv-wrapper {
-		position: relative;
-		top: 0px;
-		min-width: 1024px;
-	}
-	html.ie8 .adv-wrapper .adv-wrapper-text,html.oldie .adv-wrapper .adv-wrapper-text,html.oldIE .adv-wrapper .adv-wrapper-text {
-		line-height: 40px;
-	}
-	html.ie8 #ac-globalnav,html.oldie #ac-globalnav,html.oldIE #ac-globalnav {
-		top: 40px;
-	}
-	html.ie8 .ac-familybrowser,html.oldie .ac-familybrowser,html.oldIE .ac-familybrowser {
-		top: 84px;
-	}
-	html.ie8 .ac-nav-overlap .chapternav,html.oldie .ac-nav-overlap .chapternav,html.oldIE .ac-nav-overlap .chapternav {
-		margin-top: 84px;
-	}
-	/* hack for IE8 with shop button*/
-	html.ie8.ac-gn-segmentbar-visible #ac-gn-segmentbar,html.oldie.ac-gn-segmentbar-visible #ac-gn-segmentbar,html.oldIE.ac-gn-segmentbar-visible #ac-gn-segmentbar {
-		position: relative;
-		top: 0;
-	}
-	html.ie8.ac-gn-segmentbar-visible .adv-wrapper,html.oldie.ac-gn-segmentbar-visible .adv-wrapper,html.oldIE.ac-gn-segmentbar-visible .adv-wrapper {
-		position: absolute;
-		min-width: auto;
-	}
-</style>
-<meta name="ac-gn-store-key" content="SFX9YPYY9PPXCU9KH">
-<aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="zh-CN" dir="ltr" data-strings="{ &#39;exit&#39;: &#39;退出商店&#39;, &#39;view&#39;: &#39;{%STOREFRONT%}商店首页&#39;, &#39;segments&#39;: { &#39;smb&#39;: &#39;企业商店首页&#39;, &#39;eduInd&#39;: &#39;教育商店首页&#39;, &#39;other&#39;: &#39;商店首页&#39; } }">
-</aside>
-<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
-<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
-<script type="text/javascript" src="./about/ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
-<script src="./about/ac-analytics.js" type="text/javascript" charset="utf-8"></script>
-<script src="./about/auto-init.js" type="text/javascript" charset="utf-8"></script>
-<label id="ac-ln-curtain" for="ac-ln-menustate"></label>
-<script type="text/javascript" src="./about/ac-localnav.built.js"></script><div id="ac-ln-viewport-emitter"> </div>
-<div id="ac-ln-sticky-placeholder" class="css-sticky ac-ln-sticking"></div><nav id="ac-localnav" class="ac-localnav ac-localnav-dark js no-touch css-sticky ac-ln-sticking" lang="zh-CN" role="navigation" data-analytics-region="local nav locked" data-sticky="">
+ </head>
+ <body class="page-overview ac-gn-current-mac show-logo reveal">
+   <meta name="ac-gn-store-key" content="SFX9YPYY9PPXCU9KH">
+   <aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="zh-CN" dir="ltr" data-strings="{ &#39;exit&#39;: &#39;退出商店&#39;, &#39;view&#39;: &#39;{%STOREFRONT%}商店首页&#39;, &#39;segments&#39;: { &#39;smb&#39;: &#39;企业商店首页&#39;, &#39;eduInd&#39;: &#39;教育商店首页&#39;, &#39;other&#39;: &#39;商店首页&#39; } }">
+   </aside>
+   <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+   <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+   <label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+   <div id="ac-ln-sticky-placeholder" class="css-sticky ac-ln-sticking"></div><nav id="ac-localnav" class="ac-localnav ac-localnav-dark js no-touch css-sticky ac-ln-sticking" lang="zh-CN" role="navigation" data-analytics-region="local nav locked" data-sticky="">
     <div class="ac-ln-wrapper">
         <div class="ac-ln-background"></div>
         <div class="ac-ln-content">
@@ -358,12 +175,12 @@
             </div>
           </section><!-- end .section-distributed -->
         </main>
-<footer id="ac-globalfooter" class="ac-globalfooter-dark js" lang="zh-CN" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label">
-<section class="ac-gf-footer">
+ <footer id="ac-globalfooter" class="ac-globalfooter-dark js" lang="zh-CN" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label">
+ <section class="ac-gf-footer">
   <div class="ac-gf-footer-legal">
 		<div class="ac-gf-footer-legal-copyright"><h1>Copyright ©
 			2018
-			Light Focus. 保留所有权利。</h1></div>
+			Light Focus. 保留所有权利。<a href="#">Back to top</a></h1></div>
 		</div>
 	</div>
 </section>
@@ -372,11 +189,5 @@
 		</div>
 	</footer>
 	<script src="./about/overview.built.js" type="text/javascript" charset="utf-8"></script><div id="viewport-emitter"> </div>
-  <script src="js/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body></html>
+ </body>
+</html>
