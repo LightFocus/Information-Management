@@ -10,9 +10,15 @@
 	<title>About</title>
 	<link rel="stylesheet" href="./about/fonts" type="text/css" media="all">
 	<link rel="stylesheet" href="./about/overview.built.css">
+  <link rel="stylesheet" href="./about/overview.built1.css">
+  <link rel="stylesheet" href="./about/overview.built(1)1.css">
 	<script src="./about/head.built.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./about/head.built1.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="./about/main.built.css">
+  <script src="./about/main.built.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="./about/fonts(1)" type="text/css">
 	<link rel="stylesheet" href="./about/sfpro-cn.css">
+  <link rel="stylesheet" href="./about/overview.font.css" type="text/css" media="all">
  </head>
  <body class="page-overview ac-gn-current-mac show-logo reveal">
    <meta name="ac-gn-store-key" content="SFX9YPYY9PPXCU9KH">
@@ -184,8 +190,6 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="./about/ac-globalfooter.built.js"></script>
-<script type="text/javascript" src="./about/localeswitcher.built.js"></script>
 		</div>
 	</footer>
 	<script src="./about/overview.built.js" type="text/javascript" charset="utf-8"></script><div id="viewport-emitter"> </div>

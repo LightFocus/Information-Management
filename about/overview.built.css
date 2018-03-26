@@ -14247,8 +14247,8 @@ html.sticky .section-display .wipe-content .section-content{
     transition-property:width;
     -webkit-transition-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -webkit-transition-duration:1.2s;
-    transition-duration:1.2s;
+    -webkit-transition-duration:2s;
+    transition-duration:2s;
     -webkit-transition-delay:0s;
     transition-delay:0s
 }
