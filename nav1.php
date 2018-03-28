@@ -15,6 +15,9 @@
           <form action="logout.php" class="nav pull-right">
             <button style="height:50px;" class="btn btn-lg btn-primary btn-block" type="submit">Log Out</button>
           </form>
+          <form action="password.php" class="nav pull-right" method="post">
+            <button style="height:50px;" class="btn btn-lg btn-primary btn-block" type="submit" name="user_id" value="<?php echo($id);?>">Change Password</button>
+          </form>
         </div>
       </div>
     </nav>

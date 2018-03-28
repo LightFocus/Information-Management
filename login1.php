@@ -38,7 +38,9 @@
     <link href="css/dashboard.css" rel="stylesheet">
   </head>
   <body>
-    <?php require_once('nav1.php');?>
+    <?php
+    $id=$_SESSION["id"];
+    require_once('nav1.php');?>
     <div class="container marketing">
       <br>
           <?php

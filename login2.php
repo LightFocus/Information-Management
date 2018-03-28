@@ -1,7 +1,7 @@
 <?php
- session_start();
- require_once "pdo.php";
- error_reporting(0);
+session_start();
+require_once "pdo.php";
+error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,11 +38,12 @@
     <link href="css/dashboard.css" rel="stylesheet">
   </head>
   <body>
-    <?php require_once('nav1.php');?>
+    <?php
+    $id=$_SESSION['id'];
+    require_once('nav2.php');?>
     <div class="container marketing">
       <br>
           <?php
-          $id=$_SESSION['id'];
           if ( isset($_SESSION["success"]) ) {
               echo('<h3 style="color:green" align="center">'.$_SESSION["success"]."</h3>\n");
               unset($_SESSION["success"]);

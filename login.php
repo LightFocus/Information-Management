@@ -40,7 +40,9 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <?php require_once('nav1.php');?>
+    <?php
+    $id=$_SESSION["id"];
+    require_once('nav1.php');?>
     <div class="container marketing">
       <br>
           <?php

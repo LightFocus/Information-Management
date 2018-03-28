@@ -1,6 +1,5 @@
 <div class="navbar-wrapper">
-  <div class/="container">
-
+  <div>
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -10,15 +9,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">URP</a>
+          <a class="navbar-brand" href="#">&nbsp;&nbsp;&nbsp;URP</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.php">Log In</a></li>
-            <li><a href="http://47.91.213.123/about.php">About</a></li>
-            <li><a href="http://47.91.213.123/future.htm">Future</a></li>
-            <li><a href="contact.php">Contact</a></li>
-          </ul>
+          <form action="logout.php" class="nav pull-right">
+            <button style="height:50px;" class="btn btn-lg btn-primary btn-block" type="submit">Log Out</button>
+          </form>
+          <form action="password1.php" class="nav pull-right" method="post">
+            <button style="height:50px;" class="btn btn-lg btn-primary btn-block" type="submit" name="stu_id" value="<?php echo($id);?>">Change Password</button>
+          </form>
         </div>
       </div>
     </nav>

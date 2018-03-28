@@ -41,12 +41,17 @@
                     <ul class="ac-ln-menu-items">
 						<li class="ac-ln-menu-item">
 
-								<span class="ac-ln-menu-link current" role="link" aria-disabled="true">概览</span>
+								<span class="ac-ln-menu-link current" role="link" aria-disabled="true">Overview</span>
 
 						</li>
 						<li class="ac-ln-menu-item">
 
-								<a href="http://120.78.160.128/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">联系</a>
+								<a href="http://120.78.160.128/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">Contact</a>
+
+						</li>
+            <li class="ac-ln-menu-item">
+
+								<a href="future.htm" class="ac-ln-menu-link" data-analytics-title="specs">Future</a>
 
 						</li>
                     </ul>
@@ -58,7 +63,7 @@
                         </label>
                     </div>
                  <div class="ac-ln-action ac-ln-action-button">
-						<a href="http://120.78.160.128/index.php" class="ac-ln-button">登陆</a>
+						<a href="http://120.78.160.128/index.php" class="ac-ln-button">Log In</a>
 					</div>
 				</div>
             </div>
@@ -66,17 +71,17 @@
     </div>
 </nav>
 	<main id="main" class="main" role="main">
-    <br><h1 class="hero-subheadline columns large-12 center">关于</h1>
+    <br><h1 class="hero-subheadline columns large-12 center">About</h1>
     <section class="section section-processor" data-analytics-section-engagement="name:processor" data-component-list="ProgressiveImageComponent">
       <div class="sticky-wrapper">
         <div class="section-content">
-          <h3 class="section-headline">这个网站用的是LAMP环境。</h3>
+          <h3 class="section-headline">This website uses LAMP config environment.</h3>
           <div class="row">
-            <p class="intro column large-10 medium-12"><span class="nowrap">LAMP</span>是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写：</p>
-            <p class="intro column large-10 medium-12">Linux，操作系统</p>
-            <p class="intro column large-10 medium-12">Apache，网页服务器</p>
-            <p class="intro column large-10 medium-12">MariaDB或MySQL，数据库管理系统（或者数据库服务器)</p>
-            <p class="intro column large-10 medium-12">PHP、Perl或Python，脚本语言</p>
+            <p class="intro column large-10 medium-12"><span class="nowrap">LAMP</span>is a set of free software that are used to build a website:</p>
+            <p class="intro column large-10 medium-12">Linux, OS</p>
+            <p class="intro column large-10 medium-12">Apache, Web Server</p>
+            <p class="intro column large-10 medium-12">MariaDB or MySQL, DB Management System</p>
+            <p class="intro column large-10 medium-12">PHP, Perl or Python, Script Language</p>
           </div>
         </div>
         <div class="image-wrapper" data-component-list="MaskWipe" style="height: 572.8px; top: 115.6px;">
@@ -84,9 +89,9 @@
         </div>
         <div class="section-content pad-bottom no-pad-top">
           <ul class="spec-list">
-            <li class="spec">本地Atom编写 + MAMP调试</span></li>
-            <li class="spec small">部署于阿里云ECS</span></li>
-            <li class="spec small last">借鉴部分Apple.com前端</li>
+            <li class="spec">Atom textediter for writing codes + MAMP for locally debugging.</span></li>
+            <li class="spec small">Developed on Aliyun ECS</span></li>
+            <li class="spec small last">Some Apple.com front-end is copied</li>
           </ul>
         </div>
       </div>
@@ -94,14 +99,14 @@
 
 		<section class="section section-infographics" data-component-list=" ProgressiveImageComponent Infographics">
 			<div class="section-content">
-				<h3 class="section-headline">实力，数据为证。</h3>
+				<h3 class="section-headline">Why PHP?</h3>
 				<div class="row">
-					<p class="intro column large-9 medium-12">PHP被广泛用于服务器端。看看 PHP 和其他语言的对比你就知道了。</p>
+					<p class="intro column large-9 medium-12">PHP is widely used on server side. Check how it compares to other language.</p>
 				</div>
 				<div class="infographics">
 					<div class="row performance-graph autodesk-maya">
-						<h4 class="graph-heading">服务器端编程语言占比</h4>
-						<p class="graph-description show-small">更高的占比<sup>2018.3</sup></p>
+						<h4 class="graph-heading">Usage of server side programming language</h4>
+						<p class="graph-description show-small">Higher Usage<sup>March 2018</sup></p>
 						<figure class="graph graph-horizontalbar column large-8 small-12" data-component-list="Infographics">
 							<div class="graph-unit horizontal-unit-1" role="text">
 								<div class="graph-data">
@@ -124,15 +129,15 @@
 							<div class="graph-unit deemphasize horizontal-unit-4" role="text">
 								<div class="graph-data">
 									<div class="graph-bar"></div>
-									<div class="graph-caption">Static Files (基准)</div>
+									<div class="graph-caption">Static Files</div>
 								</div>
 							</div>
 						</figure>
 						<figure class="badge graph-badge hide-small column large-3 large-offset-1 small-12 small-offset-0">
 							<div class="badge-content" role="text">
-								<span class="badge-caption graph-label hide-small">占据</span>
+								<span class="badge-caption graph-label hide-small">Set up on</span>
 								<span class="badge-value">83.2<span class="badge-half-alt">&nbsp;%</span></span>
-								<span class="badge-caption graph-label hide-small">的服务器<sup>2018.3</sup></span>
+								<span class="badge-caption graph-label hide-small">Servers<sup>March 2018</sup></span>
 							</div>
 						</figure>
 					</div>
@@ -140,9 +145,9 @@
       <section class="section section-processor" data-analytics-section-engagement="name:processor" data-component-list="ProgressiveImageComponent">
             <div class="sticky-wrapper">
               <div class="section-content">
-                <h3 class="section-headline">前端使用Bootstrap开发。</h3>
+                <h3 class="section-headline">Front-End uses Bootstrap framework.</h3>
                 <div class="row">
-                  <p class="intro column large-10 medium-12"><span class="nowrap">Bootstrap</span>是一组用于网站和网络应用程序开发的开源前端框架，包括HTML、CSS及JavaScript的框架，提供字体排印、窗体、按钮、导航及其他各种组件及Javascript扩展，旨在使动态网页和Web应用的开发更加容易。</p>
+                  <p class="intro column large-10 medium-12"><span class="nowrap">Bootstrap</span> is a framework that used to develop front-end stuffs，including HTML, CSS and JavaScript, making development of responsive website a lot easier.</p>
                 </div>
               </div>
               <div class="image-wrapper" data-component-list="MaskWipe" style="height: 572.8px; top: 115.6px;">
@@ -150,9 +155,9 @@
               </div>
               <div class="section-content pad-bottom no-pad-top">
                 <ul class="spec-list">
-                  <li class="spec">由Twitter的Mark Otto和Jacob Thornton编写</span></li>
-                  <li class="spec small">GitHub上面被标记为“Starred”次数排名第二多的项目</span></li>
-                  <li class="spec small last">将移动设备优先作为设计方针，强调响应式设计</li>
+                  <li class="spec">Made by Mark Otto and Jacob Thornton in Twitter</span></li>
+                  <li class="spec small">Second most “Starred” project on GitHub</span></li>
+                  <li class="spec small last">Target on mobile devices, uses concept "mobile first" to develop a website.</li>
                 </ul>
               </div>
             </div>
@@ -162,10 +167,10 @@
           <section class="section section-processor" data-analytics-section-engagement="name:processor" data-component-list="ProgressiveImageComponent">
             <div class="sticky-wrapper">
               <div class="section-content">
-                <h3 class="section-headline">全站采用分布式部署。</h3>
+                <h3 class="section-headline">The website is set up distributed.</h3>
                 <div class="row">
-                  <p class="intro column large-10 medium-12">将服务器分为代码服务器和数据库服务器，更为安全、高效。</p>
-                  <p class="intro column large-10 medium-12">通过转义字符、占位符等方法有效防止HTML注入、SQL注入。</p>
+                  <p class="intro column large-10 medium-12">Divided server into web server and database server, make it more safe and fast.</p>
+                  <p class="intro column large-10 medium-12">Use HTMLentities and placeholders to prevent HTML and SQL injection.</p>
                 </div>
               </div>
               <div class="image-wrapper" data-component-list="MaskWipe" style="height: 572.8px; top: 115.6px;">
@@ -173,9 +178,9 @@
               </div>
               <div class="section-content pad-bottom no-pad-top">
                 <ul class="spec-list">
-                  <li class="spec">随时随地，任何设备都可以浏览</span></li>
-                  <li class="spec small">使用PDO连接数据库</span></li>
-                  <li class="spec small last">减少服务器负载</li>
+                  <li class="spec">Anytime and anywhere, on any devices.</span></li>
+                  <li class="spec small">Use PDO to content database.</span></li>
+                  <li class="spec small last">Decrase server load.</li>
                 </ul>
               </div>
             </div>
@@ -186,7 +191,7 @@
   <div class="ac-gf-footer-legal">
 		<div class="ac-gf-footer-legal-copyright"><h1>Copyright ©
 			2018
-			Light Focus. 保留所有权利。<a href="#">Back to top</a></h1></div>
+			Light Focus. All rights reserved.<a href="#">Back to top</a></h1></div>
 		</div>
 	</div>
 </section>
