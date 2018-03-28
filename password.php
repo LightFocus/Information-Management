@@ -74,7 +74,7 @@
      <link href="css/dashboard.css" rel="stylesheet">
    </head>
    <body>
-     <?php //require_once('nav1.php');?>
+     <?php require_once('nav1.php');?>
      <div class="container marketing">
        <div class="container">
          <?php
@@ -92,13 +92,14 @@
                unset($_SESSION["error"]);
            }
             ?>
-           <label for="inputPassword" class="sr-only">Password</label>
-           <h3>Old Password</h3>
-           <input type="text" name="old" required><br>
-           <h3>New Password</h3>
-           <input type="text" name="new" required><br>
-           <h3>Confirm Password</h3>
-           <input type="text" name="confirm" required><br>
+           <label for="inputEmail" class="sr-only">Old</label>
+           <input type="text" name="old" id="inputEmail" class="form-control" placeholder="Old Password" required autofocus>
+           <br>
+           <label for="inputEmail" class="sr-only">New</label>
+           <input type="text" name="new" id="inputEmail" class="form-control" placeholder="New Password" required autofocus>
+           <br>
+           <label for="inputEmail" class="sr-only">Confirm</label>
+           <input type="text" name="confirm" id="inputEmail" class="form-control" placeholder="Confirm Password" required autofocus>
            <?php
            echo('<br><input type="hidden"');
            echo('name="user_id" value="'.$id.'">'."\n");
