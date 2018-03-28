@@ -11,3 +11,6 @@ In this project, page "about" & "future" is modified after the apple's website. 
 <br>
 You can find the sample on http://120.78.160.128
 <br>
+Accounts are as follows:<br>
+<img src="pic/accounts.jpg">
+<br>You can try it yourself, and if you find any bugs or request any new features, please "Pull requests", thank you.
