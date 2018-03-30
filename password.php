@@ -1,7 +1,7 @@
 <?php
  session_start();
  require_once "pdo.php";
- $id=$_POST['user_id'];
+ $id=$_SESSION['id'];
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if(isset($_POST['cancel'])){
      $_SESSION["error"]="Canceled!";
@@ -108,6 +108,7 @@
          </form>
          <form class="form-signin" method="post">
            <input type="hidden" name="cancel" value="1">
+           <input type="hidden" name="user_id" value="<?php echo($id);?>">
            <button class="btn btn-lg btn-primary btn-block" type="submit">Cancel</button>
          </form>
        </div> <!-- /container -->
