@@ -77,7 +77,7 @@
         <div class="section-content">
           <h3 class="section-headline">This website uses LAMP config environment.</h3>
           <div class="row">
-            <p class="intro column large-10 medium-12"><span class="nowrap">LAMP</span>is a set of free software that are used to build a website:</p>
+            <p class="intro column large-10 medium-12"><span class="nowrap">LAMP</span> is a set of free software that are used to build a website:</p>
             <p class="intro column large-10 medium-12">Linux, OS</p>
             <p class="intro column large-10 medium-12">Apache, Web Server</p>
             <p class="intro column large-10 medium-12">MariaDB or MySQL, DB Management System</p>
@@ -96,7 +96,122 @@
         </div>
       </div>
     </section><!-- end .section-LAMP -->
+    <link rel="stylesheet" media="all" href="./about/application-0fb0979e1b1a672d2224541f3c9d46be.css" data-turbolinks-track="true">
+    <div class="welcome">
 
+      <section class="section section--hero">
+      <div class="wrapper">
+
+        <header class="hero-header">
+          <div class="hero-header-item hero-logo" aria-hidden="true">
+            <div class="hero-logo-circles">
+              <img class="hero-logo-circle" src="./about/index-portal-red-semi-085b4e44d49b2ffe935cc1b2b3094ce8.svg" alt="Index portal red semi">
+              <img class="hero-logo-circle" src="./about/index-portal-red-be5d1b8a52c13bf286560aba3e4c8c30.svg" alt="Index portal red">
+              <img class="hero-logo-circle" src="./about/index-portal-orange-semi-d2010f0f8e41e03dbf2b5c52166abe4b.svg" alt="Index portal orange semi">
+              <img class="hero-logo-circle" src="./about/index-portal-orange-b3bddfb758b91d22f43d0e14ed8e29da.svg" alt="Index portal orange">
+              <img class="hero-logo-circle" src="./about/index-portal-yellow-semi-545681fe77ff01659d472bd379a9f38b.svg" alt="Index portal yellow semi">
+              <img class="hero-logo-circle" src="./about/index-portal-yellow-ff207a58ad4f450ea9ac0e17224b39f1.svg" alt="Index portal yellow">
+              <img class="hero-logo-circle" src="./about/index-portal-green-semi-2d5bc571ee90e710d93f7ae7ddd06e85.svg" alt="Index portal green semi">
+              <img class="hero-logo-circle" src="./about/index-portal-green-6ab85a1e7343a232273868031b242806.svg" alt="Index portal green">
+              <img class="hero-logo-circle" src="./about/index-portal-blue-semi-7333f1323549be50644411b691b173dd.svg" alt="Index portal blue semi">
+              <img class="hero-logo-circle" src="./about/index-portal-blue-92fc2c151190795bd0147c03d4fb8352.svg" alt="Index portal blue">
+            </div>
+          </div>
+          <ul class="hero-header-item hero-download">
+      <li>
+        <img class="logo-wordmark" src="./about/index-atom-wordmark-65fad016a61e71c82c2cdd18d94e911f.svg" alt="Index atom wordmark">
+      </li>
+      <li>
+        <span class="version">Cross-platform editing</span>
+      </li>
+
+
+        <li>
+          <span class="platform">Built-in package manager</span>
+        </li>
+        <li>
+          <span class="platform">Smart autocompletion</span>
+        </li>
+
+
+    </ul>
+
+        </header>
+
+        <div class="hero-features">
+          <h1 class="hero-tagline">A hackable <span class="hero-tagline-highlight">text editor</span> for the 21st Century</h1>
+        </div>
+
+        <img class="hero-octonaut" src="./about/index-octonaut-4e00f2f8624e8075ff8aa84b51e3a446.svg" alt="Index octonaut">
+
+      </div>
+    </section>
+
+
+      <section id="teletype" class="section section--realtime">
+      <div class="wrapper">
+
+        <h3>Linux Plus Apache</h3>
+
+        <p>Linux has all the stuff you love out of box. SSH or bash, the way you interacte with your server, and most important, it's free.</p>
+
+        <div class="welcome-bgs">
+          <img class="welcome-bg welcome-bg--screenshot" src="pic/la.png" alt="Index teletype screenshot">
+        </div>
+
+        <p>Apache is a HTTP server let your server can handle HTTP request and response. All you need to do is install and then write your HTML code.</p>
+
+        <p class="welcome-cta">
+          <a href="https://en.wikipedia.org/wiki/Linux" class="welcome-button">Learn &nbsp;more &nbsp;about &nbsp;Linux&nbsp;</a>
+          <h6></h6>
+          <a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server" class="welcome-button">Learn more about Apache</a>
+        </p>
+
+      </div>
+    </section>
+
+      <section id="ide" class="section section--ide">
+      <div class="wrapper">
+
+        <h3>MySQL Plus PHP</h3>
+
+        <p>Both used at back-end, a database combining with a programming language makes it a lot easier to produce dynamic webpage.</p>
+
+        <div class="welcome-bgs">
+          <img class="welcome-bg welcome-bg--screenshot" src="pic/mp.png" alt="Index ide screenshot">
+        </div>
+
+        <p>PHP is prefect for small scale projects and very easy to connect database.</p>
+
+        <p class="welcome-cta">
+          <a href="https://en.wikipedia.org/wiki/MySQL" class="welcome-button">Learn more about MySQL</a>
+          <h6></h6>
+          <a href="https://en.wikipedia.org/wiki/PHP" class="welcome-button">&nbsp;Learn &nbsp;more &nbsp;about &nbsp;PHP&nbsp;</a>
+        </p>
+
+      </div>
+    </section>
+
+      <section id="github" class="section section--github">
+      <div class="wrapper">
+
+        <h3>GitHub</h3>
+
+        <p>A good place to store your code and make version control.</p>
+
+        <div class="welcome-bgs">
+          <img class="welcome-bg welcome-bg--screenshot" src="./about/index-github-screenshot-44b187e6d4b822b447d5370fb40bffdc.png" alt="Index github screenshot">
+        </div>
+
+        <p>Create new branches, stage and commit, push and pull, resolve merge conflicts, view pull requests and more—all. The GitHub is free for everyone, so you're ready to go!</p>
+
+        <p class="welcome-cta">
+          <a href="https://en.wikipedia.org/wiki/GitHub" class="welcome-button">Learn more about GitHub</a>
+        </p>
+
+      </div>
+    </section>
+  </div>
 		<section class="section section-infographics" data-component-list=" ProgressiveImageComponent Infographics">
 			<div class="section-content">
 				<h3 class="section-headline">Why PHP?</h3>
@@ -186,6 +301,35 @@
             </div>
           </section><!-- end .section-distributed -->
         </main>
+        <div class="welcome">
+        <section class="section section--contact">
+        <a name="contact"></a>
+        <div class="wrapper no-pad">
+          <div class="columns">
+
+            <div class="column">
+              <h3>Open source</h3>
+              <p>This website is open source. Be part of it or help improve it.</p>
+              <p class="welcome-cta">
+                <a href="https://github.com/LightFocus/Information-Management" class="welcome-button">Star on GitHub</a>
+              </p>
+            </div>
+
+            <div class="column">
+              <h3>Keep in touch</h3>
+              <table class="welcome-contact-table">
+                <tbody>
+                  <tr><td>GitHub</td><td><a href="https://github.com/LightFocus">github.com/LightFocus</a></td></tr>
+                  <tr><td>Twitter</td><td><a href="https://twitter.com/yanggou823">@yanggou823</a></td></tr>
+                  <tr><td>Email</td><td><a>yanggou823@gmail.com</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+        </section>
+      </div>
  <footer id="ac-globalfooter" class="ac-globalfooter-dark js" lang="zh-CN" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label">
  <section class="ac-gf-footer">
   <div class="ac-gf-footer-legal">
