@@ -89,9 +89,9 @@
         </div>
         <div class="section-content pad-bottom no-pad-top">
           <ul class="spec-list">
-            <li class="spec">Atom textediter for writing codes + MAMP for locally debugging.</span></li>
+            <li class="spec">MAMP for locally debugging.</span></li>
             <li class="spec small">Developed on Aliyun ECS</span></li>
-            <li class="spec small last">Some Apple.com front-end is copied</li>
+            <li class="spec small last">Some Apple front-end is copied</li>
           </ul>
         </div>
       </div>
@@ -153,13 +153,13 @@
 
         <h3>Linux Plus Apache</h3>
 
-        <p>Linux has all the stuff you love out of box. SSH or bash, the way you interacte with your server, and most important, it's free.</p>
+        <p>Linux has all the stuffs you love out of box. SSH or bash, the way you interacte with your server, and the most important thing, it's free.</p>
 
         <div class="welcome-bgs">
           <img class="welcome-bg welcome-bg--screenshot" src="pic/la.png" alt="Index teletype screenshot">
         </div>
 
-        <p>Apache is a HTTP server let your server can handle HTTP request and response. All you need to do is install and then write your HTML code.</p>
+        <p>Apache is a web server that let your server handles HTTP request and response. All you need to do is installing and then writing your HTML code.</p>
 
         <p class="welcome-cta">
           <a href="https://en.wikipedia.org/wiki/Linux" class="welcome-button">Learn &nbsp;more &nbsp;about &nbsp;Linux&nbsp;</a>
