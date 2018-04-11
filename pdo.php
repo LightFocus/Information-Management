@@ -1,3 +1,4 @@
 <?php
- $pdo=new PDO('mysql:host=localhost;port=3306;dbname=accounts','root','root');
+ $pdo=new PDO('mysql:host=47.91.213.123;port=3306;dbname=accounts','root','dafuweng7');
+ $pdo->query("SET NAMES utf8");
  $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
