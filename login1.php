@@ -59,37 +59,34 @@
             }else if($_SESSION["id"]==3){
               $sub="Programming";
             }
+            $_SESSION["sub"]=$sub;
           echo "<br><h1 align='center'>Welcome, ".$sub." Teacher ".$_SESSION["account"]."!</h1>";
           ?>
           <div class="row featurette">
-           <div class="col-lg-6">
-             <form class="form-signin" method="post">
-               <h2 class="form-signin-heading" align="center">Search Name</h2>
-               <label for="inputEmail" class="sr-only">Name</label>
-               <input type="text" name="search" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
-               <br>
-               <button class="btn btn-lg btn-primary btn-block" type="submit" name="search1">Search</button>
-             </form>
-             <form class="form-signin" method="post">
-                 <button style="background:black" class="btn btn-lg btn-primary btn-block" type="submit" name="cancels">Clear Search</button>
-             </form>
-           </div><!-- /.col-lg-6 -->
-           <div class="col-lg-6">
-             <form class="form-signin" method="post">
-               <h2 class="form-signin-heading" align="center">Rank By</h2>
-               <br><br>
-               <div class="radio">
-                 <label>
-                   <input type="radio" value="r_de" name="rank">Default
-                   <input type="radio" value="r_na" name="rank" style='margin-left:0px'>&nbsp;&nbsp;&nbsp;&nbsp;Name
-                   <input type="radio" value="r_nu" name="rank" style='margin-left:0px'>&nbsp;&nbsp;&nbsp;&nbsp;Number
-                   <input type="radio" value="r_sc" name="rank" style='margin-left:0px'>&nbsp;&nbsp;&nbsp;&nbsp;Score
-                 </label>
-               </div>
-               <br><br><br>
-               <button class="btn btn-lg btn-primary btn-block" type="submit" name="rank_sub">Rank Now</button>
-             </form>
-           </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+              <form class="form-signin" method="post">
+                <h2 class="form-signin-heading" align="center">Search Name</h2>
+                <br>
+                <br>
+                <label for="inputEmail" class="sr-only">Name</label>
+                <input type="text" name="search" id="inputEmail" class="form-control" placeholder="Name" required autofocus onkeyup="showResult(this.value)">
+                <br>
+              </form>
+            </div><!-- /.col-lg-4 -->
+              <div class="col-lg-6">
+              <form class="form-signin" method="post">
+                <h2 class="form-signin-heading" align="center">Rank By</h2>
+                <br><br>
+                <div align="center">
+                <select name="users" onchange="showUser(this.value)" style="font-size:30px" autofocus required>
+                     <option value="default">Default</option>
+                     <option value="name">Name</option>
+                     <option value="number">Number</option>
+                </select>
+              </div>
+                <br><br><br>
+              </form>
+            </div><!-- /.col-lg-4 -->
           </div>
           <h1 class="sub-header" align="center">Information</h1>
           <div class="table-responsive">
@@ -102,25 +99,8 @@
                   <th><h2 align="center">Operation</h2></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="tbody">
           <?php
-          if(isset($_POST['cancels'])){
-            unset($_POST['search1']);
-          }
-          if(isset($_POST['search1'])){
-            $search=" WHERE name='".$_POST['search']."'";
-          }
-          if(isset($_POST['rank'])){
-            if($_POST['rank']=="r_de"){
-              $search="";
-            }else if($_POST['rank']=="r_na"){
-              $search=" ORDER BY name";
-            }else if($_POST['rank']=="r_nu"){
-              $search=" ORDER BY number";
-            }else if($_POST['rank']=="r_sc"){
-              $search=" ORDER BY ".$sub;
-            }
-          }
           $stmt=$pdo->query("SELECT name,number,English,Programming,password,stu_id FROM students".$search);
           while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
              echo("<tr><td>");
@@ -152,5 +132,82 @@
  <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+ <script>
+ var xmlHttp;
+
+ function showUser(str) {
+     xmlHttp = GetXmlHttpObject()
+     if (xmlHttp == null) {
+         alert("Browser does not support HTTP Request")
+         return
+     }
+     var url = "getuser1.php"
+     url = url + "?c=" + str
+     url = url + "&sid=" + Math.random()
+     xmlHttp.onreadystatechange = stateChanged
+     xmlHttp.open("GET", url, true)
+     xmlHttp.send(null)
+ }
+
+ function stateChanged() {
+     if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+         document.getElementById("tbody").innerHTML = xmlHttp.responseText
+     }
+ }
+
+ function GetXmlHttpObject() {
+     var xmlHttp = null;
+     try {
+         // Firefox, Opera 8.0+, Safari
+         xmlHttp = new XMLHttpRequest();
+     } catch (e) {
+         //Internet Explorer
+         try {
+             xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+         } catch (e) {
+             xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+         }
+     }
+     return xmlHttp;
+ }
+
+ function showResult(str) {
+     xmlHttp = GetXmlHttpObject()
+     if (xmlHttp == null) {
+         alert("Browser does not support HTTP Request")
+         return
+     }
+     var url = "getuser1.php"
+     if (str != "") {
+         url = url + "?n=" + str
+         url = url + "&sid=" + Math.random()
+     }
+     xmlHttp.onreadystatechange = stateChanged
+     xmlHttp.open("GET", url, true)
+     xmlHttp.send(null)
+ }
+
+ function stateChanged() {
+     if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+         document.getElementById("tbody").innerHTML = xmlHttp.responseText
+     }
+ }
+
+ function GetXmlHttpObject() {
+     var xmlHttp = null;
+     try {
+         // Firefox, Opera 8.0+, Safari
+         xmlHttp = new XMLHttpRequest();
+     } catch (e) {
+         //Internet Explorer
+         try {
+             xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+         } catch (e) {
+             xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+         }
+     }
+     return xmlHttp;
+ }
+ </script>
  </body>
 </html>
