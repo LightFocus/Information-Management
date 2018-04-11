@@ -91,7 +91,7 @@
           <ul class="spec-list">
             <li class="spec">MAMP for locally debugging.</span></li>
             <li class="spec small">Developed on Aliyun ECS</span></li>
-            <li class="spec small last">Some Apple front-end is copied</li>
+            <li class="spec small last">Ajax is used for better experience</li>
           </ul>
         </div>
       </div>
@@ -153,13 +153,13 @@
 
         <h3>Linux Plus Apache</h3>
 
-        <p>Linux has all the stuffs you love out of box. SSH or bash, the way you interacte with your server, and the most important thing, it's free.</p>
+        <p>Linux has all the stuffs you love out of box. SSH and bash, the way you interacte with your server, and the most important thing, it's free.</p>
 
         <div class="welcome-bgs">
           <img class="welcome-bg welcome-bg--screenshot" src="pic/la.png" alt="Index teletype screenshot">
         </div>
 
-        <p>Apache is a web server that let your server handles HTTP request and response. All you need to do is installing and then writing your HTML code.</p>
+        <p>Apache is a web server that let your server handles HTTP request and response. All you need to do is installing it and then starting writing your HTML code.</p>
 
         <p class="welcome-cta">
           <a href="https://en.wikipedia.org/wiki/Linux" class="welcome-button">Learn &nbsp;more &nbsp;about &nbsp;Linux&nbsp;</a>
@@ -175,7 +175,7 @@
 
         <h3>MySQL Plus PHP</h3>
 
-        <p>Both used at back-end, a database combining with a programming language makes it a lot easier to produce dynamic webpage.</p>
+        <p>Both are used at back-end, a database combining with a programming language makes it a lot easier to produce dynamic webpage.</p>
 
         <div class="welcome-bgs">
           <img class="welcome-bg welcome-bg--screenshot" src="pic/mp.png" alt="Index ide screenshot">
@@ -284,7 +284,7 @@
               <div class="section-content">
                 <h3 class="section-headline">The website is set up distributed.</h3>
                 <div class="row">
-                  <p class="intro column large-10 medium-12">Divided server into web server and database server, make it more safe and fast.</p>
+                  <p class="intro column large-10 medium-12">Dividng server into web server and database server, makes it safer and faster.</p>
                   <p class="intro column large-10 medium-12">Use HTMLentities and placeholders to prevent HTML and SQL injection.</p>
                 </div>
               </div>
