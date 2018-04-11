@@ -82,6 +82,7 @@
                      <option value="default">Default</option>
                      <option value="name">Name</option>
                      <option value="number">Number</option>
+                     <option value="score">Score</option>
                 </select>
               </div>
                 <br><br><br>

@@ -10,6 +10,8 @@ if(isset($_GET['c'])){
     $search=" ORDER BY convert(name USING gbk)";
   }else if($_GET['c']=="number"){
     $search=" ORDER BY number";
+  }else if($_GET['c']=="score"){
+    $search=" ORDER BY ".$sub." DESC";
   }
 }
 if(isset($_GET['n'])){
