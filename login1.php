@@ -1,7 +1,10 @@
 <?php
  session_start();
  require_once "pdo.php";
- error_reporting(0);
+ if(isset($_POST["cancels"])){
+   unset($_SESSION["name"]);
+ }
+ ?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,12 +69,12 @@
             <div class="col-lg-6">
               <form class="form-signin" method="post">
                 <h2 class="form-signin-heading" align="center">Search Name</h2>
-                <br>
-                <br>
                 <label for="inputEmail" class="sr-only">Name</label>
                 <input type="text" name="search" id="inputEmail" class="form-control" placeholder="Name" required autofocus onkeyup="showResult(this.value)">
-                <br>
               </form>
+              <form class="form-signin" method="post">
+                <button style="background:black" class="btn btn-lg btn-primary btn-block" type="submit" name="cancels">Clear Search</button>
+             </form>
             </div><!-- /.col-lg-4 -->
               <div class="col-lg-6">
               <form class="form-signin" method="post">

@@ -6,8 +6,6 @@ if(isset($_GET["c"])){
 }
 if(isset($_GET["n"])){
   $_SESSION["name"]=$_GET["n"];
-}else{
-  unset($_SESSION["name"]);
 }
 $search="";
 $search1="";
