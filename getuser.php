@@ -1,20 +1,29 @@
 <?php
 session_start();
 require_once "pdo.php";
+if(isset($_GET["c"])){
+  $_SESSION["rank"]=$_GET["c"];
+}
+if(isset($_GET["n"])){
+  $_SESSION["name"]=$_GET["n"];
+}else{
+  unset($_SESSION["name"]);
+}
 $search="";
-if(isset($_GET['c'])){
-  if($_GET['c']=="default"){
+$search1="";
+if(isset($_SESSION["rank"])){
+  if($_SESSION["rank"]=="default"){
     $search="";
-  }else if($_GET['c']=="name"){
+  }else if($_SESSION["rank"]=="name"){
     $search=" ORDER BY convert(name USING gbk)";
-  }else if($_GET['c']=="number"){
+  }else if($_SESSION["rank"]=="number"){
     $search=" ORDER BY number";
   }
 }
-if(isset($_GET['n'])){
-  $search=" WHERE name like '".$_GET['n']."%'";
+if(isset($_SESSION["name"])){
+  $search1=" WHERE name like '".$_SESSION["name"]."%'";
 }
-$stmt=$pdo->query("SELECT name,number,English,Programming,password,stu_id FROM students".$search);
+$stmt=$pdo->query("SELECT name,number,English,Programming,password,stu_id FROM students".$search1.$search);
 while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
    echo("<tr><td>");
    echo("<h3 align='center'>".$row['name']."</h3>");

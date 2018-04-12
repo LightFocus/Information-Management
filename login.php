@@ -156,7 +156,6 @@ require_once('footer.php');
   <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
   <script>
   var xmlHttp;
-
   function showUser(str) {
       xmlHttp = GetXmlHttpObject()
       if (xmlHttp == null) {
@@ -165,18 +164,17 @@ require_once('footer.php');
       }
       var url = "getuser.php"
       url = url + "?c=" + str
+      console.log(url);
       url = url + "&sid=" + Math.random()
       xmlHttp.onreadystatechange = stateChanged
       xmlHttp.open("GET", url, true)
       xmlHttp.send(null)
   }
-
   function stateChanged() {
       if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
           document.getElementById("tbody").innerHTML = xmlHttp.responseText
       }
   }
-
   function GetXmlHttpObject() {
       var xmlHttp = null;
       try {
@@ -192,7 +190,6 @@ require_once('footer.php');
       }
       return xmlHttp;
   }
-
   function showResult(str) {
       xmlHttp = GetXmlHttpObject()
       if (xmlHttp == null) {
@@ -202,19 +199,18 @@ require_once('footer.php');
       var url = "getuser.php"
       if (str != "") {
           url = url + "?n=" + str
+          console.log(url);
           url = url + "&sid=" + Math.random()
       }
       xmlHttp.onreadystatechange = stateChanged
       xmlHttp.open("GET", url, true)
       xmlHttp.send(null)
   }
-
   function stateChanged() {
       if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
           document.getElementById("tbody").innerHTML = xmlHttp.responseText
       }
   }
-
   function GetXmlHttpObject() {
       var xmlHttp = null;
       try {
