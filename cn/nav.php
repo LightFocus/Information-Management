@@ -15,8 +15,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php">登陆</a></li>
-            <li><a href="http://47.91.213.123/about.php">关于</a></li>
-            <li><a href="http://47.91.213.123/future.htm">未来</a></li>
+            <li><a href="https://ynucs.com/about.php">关于</a></li>
+            <li><a href="https://ynucs.com/future.htm">未来</a></li>
             <li><a href="contact.php">联系</a></li>
           </ul>
           <form action="../en/index.php" class="nav pull-right">

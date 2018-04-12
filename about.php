@@ -36,7 +36,7 @@
             </h2>
 
             <div class="ac-ln-menu">
-                <a href="https://www.apple.com/cn/imac-pro/#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open"> <span class="ac-ln-menucta-anchor-label">打开菜单</span> </a> <a href="https://www.apple.com/cn/imac-pro/#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close"> <span class="ac-ln-menucta-anchor-label">关闭菜单</span> </a>
+                <a href="" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open"> <span class="ac-ln-menucta-anchor-label">打开菜单</span> </a> <a href="https://www.apple.com/cn/imac-pro/#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close"> <span class="ac-ln-menucta-anchor-label">关闭菜单</span> </a>
                 <div class="ac-ln-menu-tray">
                     <ul class="ac-ln-menu-items">
 						<li class="ac-ln-menu-item">
@@ -46,7 +46,7 @@
 						</li>
 						<li class="ac-ln-menu-item">
 
-								<a href="http://120.78.160.128/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">Contact</a>
+								<a href="https://ynucs.com/en/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">Contact</a>
 
 						</li>
             <li class="ac-ln-menu-item">
@@ -63,7 +63,7 @@
                         </label>
                     </div>
                  <div class="ac-ln-action ac-ln-action-button">
-						<a href="http://120.78.160.128/index.php" class="ac-ln-button">Log In</a>
+						<a href="https://ynucs.com/index.html" class="ac-ln-button">Log In</a>
 					</div>
 				</div>
             </div>

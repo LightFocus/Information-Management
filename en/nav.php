@@ -15,8 +15,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Log In</a></li>
-            <li><a href="http://47.91.213.123/about.php">About</a></li>
-            <li><a href="http://47.91.213.123/future.htm">Future</a></li>
+            <li><a href="https://ynucs.com/about.php">About</a></li>
+            <li><a href="https://ynucs.com/future.htm">Future</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
           <form action="../cn/index.php" class="nav pull-right">
