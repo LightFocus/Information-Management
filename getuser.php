@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once "pdo.php";
+if(!isset($_GET["sid"])){
+  unset($_SESSION["name"]);
+}
 if(isset($_GET["c"])){
   $_SESSION["rank"]=$_GET["c"];
 }
