@@ -36,7 +36,7 @@
                 };
             }(),
             // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
-            language : (navigator.browserLanguage || navigator.language).toLowerCase()
+            language : (navigator.systemLanguage || navigator.language).toLowerCase()
         }
 
 
@@ -66,6 +66,14 @@
         // 还可以通过language，区分开多国语言版
         switch(Terminal.language){
             case 'zh-cn':
+                lagName = "中文";
+                window.location.href='cn/index.php';
+                break;
+            case 'zh-tw':
+                lagName = "中文";
+                window.location.href='cn/index.php';
+                break;
+            case 'zh-hk':
                 lagName = "中文";
                 window.location.href='cn/index.php';
                 break;

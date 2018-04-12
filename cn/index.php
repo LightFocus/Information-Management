@@ -137,10 +137,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   ?>
                   <br>
                  <label for="inputEmail" class="sr-only">姓名</label>
-                 <input type="text" name="name" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
+                 <input type="text" name="name" id="inputEmail" class="form-control" placeholder="姓名" required autofocus>
                  <?php echo ('<h4 align="center"><font color="red">'.$nameErr.'</font></h4>');?>
                  <label for="inputPassword" class="sr-only">密码</label>
-                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
                  <?php echo ('<h4 align="center"><font color="red">'.$passErr.'</font></h4>');?>
                  <div class="radio">
                    <label>
