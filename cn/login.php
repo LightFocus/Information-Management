@@ -16,17 +16,17 @@ if(isset($_POST["cancels"])){
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Students Information Management System</title>
+    <title>学生信息管理系统</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,9 +35,9 @@ if(isset($_POST["cancels"])){
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/signin.css" rel="stylesheet">
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/signin.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -49,7 +49,7 @@ if(isset($_POST["cancels"])){
     <br>
     <?php if (!isset($_SESSION["account"])) {
        ?>
-      <h1 align="center">Please <a href="index.php">Log In</a> to start.</h1>
+      <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
     <?php
      } else {
       ?>
@@ -62,50 +62,50 @@ if(isset($_POST["cancels"])){
         echo ('<h3 style="color:red" align="center">' . $_SESSION["error"] . "</h3>\n");
         unset($_SESSION["error"]);
     }
-    echo "<br><h1 align='center'>Welcome, administrator " . $_SESSION["account"] . "!</h1>";
+    echo "<br><h1 align='center'>欢迎，管理员 " . $_SESSION["account"] . "!</h1>";
 ?>
          <div class="row featurette">
            <div class="col-lg-4">
              <form class="form-signin" method="post">
-               <h2 class="form-signin-heading" align="center">Search Name</h2>
+               <h2 class="form-signin-heading" align="center">搜索姓名</h2>
                <br>
                <br>
                <label for="inputEmail" class="sr-only">Name</label>
-               <input type="text" name="search" id="inputEmail" class="form-control" placeholder="Name" required autofocus onkeyup="showResult(this.value)">
+               <input type="text" name="search" id="inputEmail" class="form-control" placeholder="姓名" required autofocus onkeyup="showResult(this.value)">
              </form>
            </div><!-- /.col-lg-4 -->
            <div class="col-lg-4">
              <form class="form-signin" method="post">
-               <h2 class="form-signin-heading" align="center">Rank By</h2>
+               <h2 class="form-signin-heading" align="center">排序</h2>
                <br><br>
                <select name="users" onchange="showUser(this.value)" style="font-size:30px" autofocus required>
-                    <option value="default">Default</option>
-                    <option value="name">Name</option>
-                    <option value="number">Number</option>
+                    <option value="default">默认</option>
+                    <option value="name">姓名</option>
+                    <option value="number">学号</option>
                </select>
                <br><br><br>
              </form>
            </div><!-- /.col-lg-4 -->
            <div class="col-lg-4">
              <form action="add.php" class="form-signin" method="get">
-               <h2 class="form-signin-heading" align="center">Add A New Student</h2>
+               <h2 class="form-signin-heading" align="center">添加学生</h2>
                <br><br>
-               <button class="btn btn-lg btn-primary btn-block" type="submit" name="add">Add Now</button>
+               <button class="btn btn-lg btn-primary btn-block" type="submit" name="add">添加</button>
                <br><br><br><br>
              </form>
            </div><!-- /.col-lg-4 -->
           </div>
-          <h1 class="sub-header" align="center">Information</h1>
+          <h1 class="sub-header" align="center">信息</h1>
           <div class="table-responsive">
             <table class="table table-striped" align="center">
               <thead>
                 <tr>
-                  <th><h2 align="center">Name</h2></th>
-                  <th><h2 align="center">Number</h2></th>
-                  <th><h2 align="center">English Score</h2></th>
-                  <th><h2 align="center">Programming Score</h2></th>
-                  <th><h2 align="center">Password</h2></th>
-                  <th><h2 align="center">Operation</h2></th>
+                  <th><h2 align="center">姓名</h2></th>
+                  <th><h2 align="center">学号</h2></th>
+                  <th><h2 align="center">英语成绩</h2></th>
+                  <th><h2 align="center">编程成绩</h2></th>
+                  <th><h2 align="center">密码</h2></th>
+                  <th><h2 align="center">操作</h2></th>
                 </tr>
               </thead>
               <tbody id="tbody">
@@ -125,7 +125,7 @@ if(isset($_POST["cancels"])){
         echo ("</td><td>");
         echo ('<form action="delete.php" method="post"><input type="hidden"');
         echo ('name="stu_id" value="' . $row['stu_id'] . '">' . "\n");
-        echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Delete" name="delete1">Delete</button>');
+        echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Delete" name="delete1">删除</button>');
         echo ("\n</form>\n<h6></h6>");
         echo ('<form action="change.php" method="post"><input type="hidden"');
         echo ('name="stu_id" value="' . $row['stu_id'] . '">' . "\n");
@@ -134,7 +134,7 @@ if(isset($_POST["cancels"])){
         echo ('<input type="hidden" value="' . $row['English'] . '" name="e_score">');
         echo ('<input type="hidden" value="' . $row['Programming'] . '" name="p_score">');
         echo ('<input type="hidden" value="' . $row['password'] . '" name="password">');
-        echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Change" name="change1">Change</button>');
+        echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Change" name="change1">更改</button>');
         echo ("\n</form>\n");
         echo ("</td></tr>");
     }
@@ -149,13 +149,13 @@ require_once('footer.php');
  <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+  <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
+  <script src="../bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
   <script>
   var xmlHttp;
   function showUser(str) {

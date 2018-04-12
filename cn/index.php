@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      }
       $_SESSION["account"]=$name;
       $_SESSION["id"]=$user;
-      $_SESSION["success"]="Logged in!";
+      $_SESSION["success"]="已登入!";
       if($user==1){
         header('Location:login.php');
       }else{
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       return;
     }else {
-      $_SESSION["error"]="Incorrect account or password.";
+      $_SESSION["error"]="用户名或密码错误";
       header('Location:index.php');
       return;
     }
@@ -64,11 +64,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      }
       $_SESSION["account"]=$name;
       $_SESSION["id"]=$id;
-      $_SESSION["success"]="Logged in!";
+      $_SESSION["success"]="已登入!";
         header('Location:login2.php');
       return;
     }else {
-      $_SESSION["error"]="Incorrect account or password.";
+      $_SESSION["error"]="用户名或密码错误";
       header('Location:index.php');
       return;
     }
@@ -86,17 +86,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Students Information Management System</title>
+    <title>学生信息管理系统</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -105,8 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/signin.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/signin.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -123,8 +123,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              <div class="container">
                <form class="form-signin" method="post">
                  <br>
-                 <h1 class="form-signin-heading" align="center">Welcome To URP</h1>
-                 <h2 class="form-signin-heading" align="center">Please Sign In</h2>
+                 <h1 class="form-signin-heading" align="center">欢迎来到 URP</h1>
+                 <h2 class="form-signin-heading" align="center">请登陆</h2>
                  <br>
                  <?php
                  if ( isset($_SESSION["success"]) ) {
@@ -136,20 +136,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                  }
                   ?>
                   <br>
-                 <label for="inputEmail" class="sr-only">Name</label>
+                 <label for="inputEmail" class="sr-only">姓名</label>
                  <input type="text" name="name" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
                  <?php echo ('<h4 align="center"><font color="red">'.$nameErr.'</font></h4>');?>
-                 <label for="inputPassword" class="sr-only">Password</label>
+                 <label for="inputPassword" class="sr-only">密码</label>
                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                  <?php echo ('<h4 align="center"><font color="red">'.$passErr.'</font></h4>');?>
                  <div class="radio">
                    <label>
-                     <input type="radio" value="stu" name="id"> Student  <br>
-                     <input type="radio" value="admin" name="id"> Administrator / Teacher
+                     <input type="radio" value="stu" name="id"> 学生  <br>
+                     <input type="radio" value="admin" name="id"> 管理员 / 教师
                    </label>
                  </div>
                  <?php echo ('<h4 align="center"><font color="red">'.$radioErr.'</font></h4>');?>
-                 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
                </form>
 
              </div> <!-- /container -->
@@ -158,12 +158,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
  </body>
 </html>

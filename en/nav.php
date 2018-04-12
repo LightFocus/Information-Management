@@ -19,6 +19,9 @@
             <li><a href="http://47.91.213.123/future.htm">Future</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
+          <form action="../cn/index.php" class="nav pull-right">
+            <button style="height:50px;" class="btn btn-lg btn-primary btn-block" type="submit">中文</button>
+          </form>
         </div>
       </div>
     </nav>

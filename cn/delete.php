@@ -6,11 +6,11 @@
      $sql="DELETE FROM students WHERE stu_id =:zip";
      $stmt=$pdo->prepare($sql);
      $stmt->execute(array(':zip'=>$_POST['stu_id']));
-     $_SESSION["success"]="Deleted!";
+     $_SESSION["success"]="已删除!";
      header('Location: login.php');}
 
      if(isset($_POST['cancel'])){
-       $_SESSION["error"]="Canceled!";
+       $_SESSION["error"]="已取消!";
        header('Location:login.php');
      }
  ?>
@@ -25,17 +25,17 @@
      <meta name="author" content="">
      <link rel="icon" href="../../favicon.ico">
 
-     <title>Students Information Management System</title>
+     <title>学生信息管理系统</title>
 
      <!-- Bootstrap core CSS -->
-     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-     <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+     <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
@@ -44,24 +44,24 @@
      <![endif]-->
 
      <!-- Custom styles for this template -->
-     <link href="css/carousel.css" rel="stylesheet">
-     <link href="css/signin.css" rel="stylesheet">
-     <link href="css/dashboard.css" rel="stylesheet">
+     <link href="../css/carousel.css" rel="stylesheet">
+     <link href="../css/signin.css" rel="stylesheet">
+     <link href="../css/dashboard.css" rel="stylesheet">
   </head>
   <body>
     <?php require_once('nav1.php');?>
     <div class="container marketing">
       <?php
       if ( ! isset($_SESSION["account"]) ) { ?>
-         <h1 align="center">Please <a href="index.php">Log In</a> to start.</h1>
+         <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
       <?php } else {?>
-   <h1 class="sub-header" align="center">Are You Sure?</h1>
+   <h1 class="sub-header" align="center">您确定吗？</h1>
    <div class="table-responsive">
      <table class="table table-striped">
        <thead>
          <tr>
-           <th><h2 align="center">Name</h2></th>
-           <th><h2 align="center">Number</h2></th>
+           <th><h2 align="center">姓名</h2></th>
+           <th><h2 align="center">学号</h2></th>
          </tr>
        </thead>
        <tbody>
@@ -80,7 +80,7 @@
     <div class="col-lg-4">
      <form class="form-signin" action="delete.php" method="post">
        <input type="hidden" name="stu_id" value="<?php echo($id)?>">
-       <button style="background:red" class="btn btn-lg btn-primary btn-block" type="submit" value="Delete" name="delete">Delete</button>
+       <button style="background:red" class="btn btn-lg btn-primary btn-block" type="submit" value="Delete" name="delete">删除</button>
      </form>
    </div>
    <div class="col-lg-4">
@@ -88,7 +88,7 @@
    <div class="col-lg-4">
      <form class="form-signin" method="post">
        <input type="hidden" name="stu_id">
-       <button class="btn btn-lg btn-primary btn-block" type="submit" value="Cancel" name="cancel">Cancel</button>
+       <button class="btn btn-lg btn-primary btn-block" type="submit" value="Cancel" name="cancel">取消</button>
      </form>
    </div>
  </div>
@@ -97,12 +97,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

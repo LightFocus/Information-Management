@@ -13,8 +13,9 @@
  }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if(isset($_POST['cancel'])){
-    $_SESSION["error"]="Canceled!";
+    $_SESSION["error"]="已取消!";
     header('Location:login.php');
+    return;
   }else if(isset($_POST['change'])&&isset($_POST['name'])&&isset($_POST['number'])&&isset($_POST['password'])){
        $sql="UPDATE students SET name=:name,number=:number,password=:password WHERE stu_id=:zip";
        $stmt=$pdo->prepare($sql);
@@ -23,8 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        ':name'=>$_POST['name'],
        ':number'=>$_POST['number'],
        ':password'=>$_POST['password']));
-       $_SESSION["success"]="Changed!";
+       $_SESSION["success"]="已更改!";
        header('Location: login.php');
+       return;
     }
 }
  ?>
@@ -39,17 +41,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <meta name="author" content="">
      <link rel="icon" href="../../favicon.ico">
 
-     <title>Students Information Management System</title>
+     <title>学生信息管理系统</title>
 
      <!-- Bootstrap core CSS -->
-     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-     <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+     <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
@@ -58,8 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <![endif]-->
 
      <!-- Custom styles for this template -->
-     <link href="css/carousel.css" rel="stylesheet">
-     <link href="css/signin.css" rel="stylesheet">
+     <link href="../css/carousel.css" rel="stylesheet">
+     <link href="../css/signin.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar-wrapper">
@@ -74,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Change Information</a>
+              <a class="navbar-brand" href="#">修改信息</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -82,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </ul>
               <ul class="nav pull-right">
                 <li>
-                <a href="logout.php">Log Out</a>
+                <a href="logout.php">登出</a>
                 </li>
               </ul>
             </div>
@@ -94,26 +96,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="container">
         <?php
         if ( ! isset($_SESSION["account"]) ) { ?>
-           <h1 align="center">Please <a href="index.php">Log In</a> to start.</h1>
+           <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
         <?php } else {?>
         <form class="form-signin" method="post">
-          <h2 class="form-signin-heading" align="center">Change Information</h2>
+          <h2 class="form-signin-heading" align="center">修改信息</h2>
           <br>
-          <label for="inputEmail" class="sr-only">Name</label>
-          <h3>Name:</h3><input type="text" name="name" id="inputEmail" class="form-control" value="<?php echo($_POST['name']);?>" required autofocus>
+          <label for="inputEmail" class="sr-only">姓名</label>
+          <h3>姓名:</h3><input type="text" name="name" id="inputEmail" class="form-control" value="<?php echo($_POST['name']);?>" required autofocus>
           <?php echo ('<h4 align="center"><font color="red">'.$nameErr.'</font></h4>');?>
-          <label for="inputEmail" class="sr-only">Number</label>
-          <h3>Number:</h3><input type="text" name="number" id="inputEmail" class="form-control" value="<?php echo($_POST['number']);?>" required autofocus>
+          <label for="inputEmail" class="sr-only">学号</label>
+          <h3>学号:</h3><input type="text" name="number" id="inputEmail" class="form-control" value="<?php echo($_POST['number']);?>" required autofocus>
           <?php echo ('<h4 align="center"><font color="red">'.$numberErr.'</font></h4>');?>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <h3>Password:</h3><input type="text" name="password" id="inputPassword" class="form-control" value="<?php echo($_POST['password']);?>" required>
+          <label for="inputPassword" class="sr-only">密码</label>
+          <h3>密码:</h3><input type="text" name="password" id="inputPassword" class="form-control" value="<?php echo($_POST['password']);?>" required>
           <?php echo ('<h4 align="center"><font color="red">'.$passErr.'</font></h4>');?>
           <input type="hidden" value="<?php echo($_POST['stu_id']);?>" name="stu_id">
-          <button class="btn btn-lg btn-primary btn-block" type="submit" name="change">Change</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" name="change">修改</button>
         </form>
         <form class="form-signin" method="post">
           <input type="hidden" name="cancel" value="1">
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Cancel</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">取消</button>
         </form>
       </div> <!-- /container -->
     <?php }require_once('footer.php');?>
@@ -121,12 +123,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          <!-- Bootstrap core JavaScript
          ================================================== -->
          <!-- Placed at the end of the document so the pages load faster -->
-         <script src="js/jquery.min.js"></script>
+         <script src="../js/jquery.min.js"></script>
          <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-         <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+         <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
          <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-         <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
+         <script src="../bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
          <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-         <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+         <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

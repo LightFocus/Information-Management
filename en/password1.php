@@ -1,19 +1,14 @@
 <?php
  session_start();
  require_once "pdo.php";
- $id=$_SESSION['id'];
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if(isset($_POST['cancel'])){
      $_SESSION["error"]="Canceled!";
-     if($id==1){
-       header('Location:login.php');
-       return;
-     }else{
-       header('Location:login1.php');
-       return;
-     }
+     header('Location:login2.php');
+     return;
    }else if(isset($_POST['change'])&&isset($_POST['old'])&&isset($_POST['new'])&&isset($_POST['confirm'])){
-    $sql="SELECT password FROM accounts WHERE user_id=".$id;
+    $id=$_POST['stu_id'];
+    $sql="SELECT password FROM students WHERE stu_id=".$id;
     $stmt=$pdo->query($sql);
     foreach($stmt as $row){
      $pass=$row['password'];
@@ -23,19 +18,14 @@
     }else if($_POST['old']!=$pass){
       $_SESSION["error"]="Old password is wrong!";
     }else{
-      $sql="UPDATE accounts SET password=:pass WHERE user_id=:zip";
+      $sql="UPDATE students SET password=:pass WHERE stu_id=:zip";
       $stmt=$pdo->prepare($sql);
       $stmt->execute(array(
-      ':zip'=>$_POST['user_id'],
+      ':zip'=>$_POST['stu_id'],
       ':pass'=>$_POST['new'],));
       $_SESSION["success"]="Password Changed!";
-      if($id==1){
-        header('Location:login.php');
-        return;
-      }else{
-        header('Location:login1.php');
-        return;
-      }
+      header('Location:login2.php');
+      return;
     }
   }}
  ?>
@@ -53,14 +43,14 @@
      <title>Students Information Management System</title>
 
      <!-- Bootstrap core CSS -->
-     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-     <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+     <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+     <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
@@ -69,9 +59,9 @@
      <![endif]-->
 
      <!-- Custom styles for this template -->
-     <link href="css/carousel.css" rel="stylesheet">
-     <link href="css/signin.css" rel="stylesheet">
-     <link href="css/dashboard.css" rel="stylesheet">
+     <link href="../css/carousel.css" rel="stylesheet">
+     <link href="../css/signin.css" rel="stylesheet">
+     <link href="../css/dashboard.css" rel="stylesheet">
    </head>
    <body>
      <?php require_once('nav1.php');?>
@@ -92,23 +82,23 @@
                unset($_SESSION["error"]);
            }
             ?>
-           <label for="inputEmail" class="sr-only">Old</label>
-           <input type="text" name="old" id="inputEmail" class="form-control" placeholder="Old Password" required autofocus>
-           <br>
-           <label for="inputEmail" class="sr-only">New</label>
-           <input type="text" name="new" id="inputEmail" class="form-control" placeholder="New Password" required autofocus>
-           <br>
-           <label for="inputEmail" class="sr-only">Confirm</label>
-           <input type="text" name="confirm" id="inputEmail" class="form-control" placeholder="Confirm Password" required autofocus>
+            <label for="inputEmail" class="sr-only">Old</label>
+            <input type="text" name="old" id="inputEmail" class="form-control" placeholder="Old Password" required autofocus>
+            <br>
+            <label for="inputEmail" class="sr-only">New</label>
+            <input type="text" name="new" id="inputEmail" class="form-control" placeholder="New Password" required autofocus>
+            <br>
+            <label for="inputEmail" class="sr-only">Confirm</label>
+            <input type="text" name="confirm" id="inputEmail" class="form-control" placeholder="Confirm Password" required autofocus>
            <?php
+           $id=$_POST['stu_id'];
            echo('<br><input type="hidden"');
-           echo('name="user_id" value="'.$id.'">'."\n");
+           echo('name="stu_id" value="'.$id.'">'."\n");
            ?>
            <button class="btn btn-lg btn-primary btn-block" type="sumbit" value="Change" name="change">Change</button>
          </form>
          <form class="form-signin" method="post">
            <input type="hidden" name="cancel" value="1">
-           <input type="hidden" name="user_id" value="<?php echo($id);?>">
            <button class="btn btn-lg btn-primary btn-block" type="submit">Cancel</button>
          </form>
        </div> <!-- /container -->
@@ -117,12 +107,12 @@
           <!-- Bootstrap core JavaScript
           ================================================== -->
           <!-- Placed at the end of the document so the pages load faster -->
-          <script src="js/jquery.min.js"></script>
+          <script src="../js/jquery.min.js"></script>
           <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-          <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+          <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
           <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-          <script src="bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
+          <script src="../bootstrap-3.3.7/assets/js/vendor/holder.min.js"></script>
           <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-          <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+          <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
  </body>
  </html>
