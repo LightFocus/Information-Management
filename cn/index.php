@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    }else if (empty($_POST["password"])) {
      $passErr = " Password is Required";
    }else if (empty($_POST["id"])) {
-     $radioErr = " ID is Required";
+     $radioErr = " 请选择ID";
    }else if(isset($_POST['name'])&&isset($_POST['password'])&&$_POST['id']=="admin"){
     unset($_SESSION["account"]);
     $sql="SELECT email FROM accounts WHERE name=:name AND password=:pw";

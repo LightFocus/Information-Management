@@ -5,7 +5,6 @@
    unset($_SESSION["name"]);
  }
  ?>
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,7 +53,7 @@
               echo('<h3 style="color:red" align="center">'.$_SESSION["error"]."</h3>\n");
               unset($_SESSION["error"]);
           }
-          if ( ! isset($_SESSION["account"]) ) { ?>
+          if ( ! isset($_SESSION["account"])||($_SESSION["account"]!="eng"&&$_SESSION["account"]!="pro")) { ?>
              <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
           <?php } else {
             if($_SESSION["id"]==2){

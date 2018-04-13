@@ -52,7 +52,7 @@
     <?php require_once('nav1.php');?>
     <div class="container marketing">
       <?php
-      if ( ! isset($_SESSION["account"]) ) { ?>
+      if ( ! isset($_SESSION["account"])||$_SESSION["account"]!="admin" ) { ?>
          <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
       <?php } else {?>
    <h1 class="sub-header" align="center">您确定吗？</h1>

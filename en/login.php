@@ -47,8 +47,7 @@ if(isset($_POST["cancels"])){
      require_once('nav1.php');?>
     <div class="container marketing">
     <br>
-    <?php if (!isset($_SESSION["account"])) {
-       ?>
+    <?php if (!isset($_SESSION["account"])||$_SESSION["account"]!="admin") {?>
       <h1 align="center">Please <a href="index.php">Log In</a> to start.</h1>
     <?php
      } else {

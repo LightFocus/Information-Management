@@ -78,7 +78,7 @@
      <div class="container marketing">
        <div class="container">
          <?php
-         if ( ! isset($_SESSION["account"]) ) { ?>
+         if ( ! isset($_SESSION["account"])||$_SESSION["account"]!="admin" ) { ?>
             <h1 align="center">Please <a href="index.php">Log In</a> to start.</h1>
          <?php } else {?>
          <form class="form-signin" method="post">

@@ -68,7 +68,7 @@
      <div class="container marketing">
        <div class="container">
          <?php
-         if ( ! isset($_SESSION["account"]) ) { ?>
+         if ( ! isset($_SESSION["account"])||($_SESSION["account"]!="eng"&&$_SESSION["account"]!="pro")) { ?>
             <h1 align="center">请<a href="index.php">登陆</a>以继续</h1>
          <?php } else {?>
          <form class="form-signin" method="post">
