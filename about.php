@@ -46,7 +46,7 @@
 						</li>
 						<li class="ac-ln-menu-item">
 
-								<a href="https://ynucs.com/en/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">Contact</a>
+								<a href="http://120.78.160.128/en/contact.php" class="ac-ln-menu-link" data-analytics-title="specs">Contact</a>
 
 						</li>
             <li class="ac-ln-menu-item">
@@ -63,7 +63,7 @@
                         </label>
                     </div>
                  <div class="ac-ln-action ac-ln-action-button">
-						<a href="https://ynucs.com/index.html" class="ac-ln-button">Log In</a>
+						<a href="http://120.78.160.128/index.html" class="ac-ln-button">Log In</a>
 					</div>
 				</div>
             </div>
