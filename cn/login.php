@@ -38,6 +38,7 @@ if(isset($_POST["cancels"])){
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../css/signin.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -111,6 +112,7 @@ if(isset($_POST["cancels"])){
               <tbody id="tbody">
           <?php
     $stmt = $pdo->query("SELECT name,number,English,Programming,password,stu_id FROM students");
+    $count=0;
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo ("<tr><td>");
         echo ("<h3 align='center'>" . $row['name'] . "</h3>");
@@ -123,9 +125,56 @@ if(isset($_POST["cancels"])){
         echo ("</td><td>");
         echo ("<h3 align='center'>" . $row['password'] . "</h3>");
         echo ("</td><td>");
-        echo ('<form action="delete.php" method="post"><input type="hidden"');
-        echo ('name="stu_id" value="' . $row['stu_id'] . '">' . "\n");
-        echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Delete" name="delete1">删除</button>');
+        echo ('<form method=“post”>');
+        echo ('<input type="hidden" name="stu_id" value="' . $row['stu_id'] . '">' . "\n");?>
+        <div class="btn1" id="<?php echo($count)?>" onmousemove="var btn1=document.getElementById('<?php echo($count)?>');
+    		var btn1Front = btn1.querySelector( '.btn1-front' ),
+    			btn1Yes = btn1.querySelector( '.btn1-back .yes' ),
+    			btn1No = btn1.querySelector( '.btn1-back .no' );
+    		//console.log(btn1);
+    		btn1Front.addEventListener( 'click', function( event ) {
+    			var mx = event.clientX - btn1.offsetLeft,
+    				my = event.clientY - btn1.offsetTop;
+
+    			var w = btn1.offsetWidth,
+    				h = btn1.offsetHeight;
+
+    			var directions = [
+    				{ id: 'top', x: w/2, y: 0 },
+    				{ id: 'right', x: w, y: h/2 },
+    				{ id: 'bottom', x: w/2, y: h },
+    				{ id: 'left', x: 0, y: h/2 }
+    			];
+
+    			directions.sort( function( a, b ) {
+    				return distance( mx, my, a.x, a.y ) - distance( mx, my, b.x, b.y );
+    			} );
+
+    			btn1.setAttribute( 'data-direction', directions.shift().id );
+    			btn1.classList.add( 'is-open' );
+    		} );
+
+    		btn1Yes.addEventListener( 'click', function( event ) {
+    			btn1.classList.remove( 'is-open' );
+    		} );
+
+    		btn1No.addEventListener( 'click', function( event ) {
+    			btn1.classList.remove( 'is-open' );
+    		} );
+
+    		function distance( x1, y1, x2, y2 ) {
+    			var dx = x1-x2;
+    			var dy = y1-y2;
+    			return Math.sqrt( dx*dx + dy*dy );
+    		}">
+    			<div class="btn1-back">
+    				<p>您确定要这么做吗？</p>
+    				<button class="yes" value="yes<?php echo($row['stu_id']);?>" name="choice" onclick="deleteUser(this.value)">是</button>
+    				<button class="no" value="no <?php echo($row['stu_id']);?>" name="choice" onclick="deleteUser(this.value)">否</button>
+    			</div>
+    		<div class="btn1-front" style="width:303px;">删除</div>
+    		</div>
+        <?php
         echo ("\n</form>\n<h6></h6>");
         echo ('<form action="change.php" method="post"><input type="hidden"');
         echo ('name="stu_id" value="' . $row['stu_id'] . '">' . "\n");
@@ -137,6 +186,7 @@ if(isset($_POST["cancels"])){
         echo ('<button class="btn btn-lg btn-primary btn-block" type="submit" value="Change" name="change1">更改</button>');
         echo ("\n</form>\n");
         echo ("</td></tr>");
+        $count++;
     }
 ?>
           </tbody>
@@ -157,6 +207,29 @@ require_once('footer.php');
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="../bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
   <script>
+  window.onbeforeunload = function(){
+    var scrollPos;
+    if (typeof window.pageYOffset != 'undefined') {
+        scrollPos = window.pageYOffset;
+    }
+    else if (typeof document.compatMode != 'undefined' &&
+        document.compatMode != 'BackCompat') {
+        scrollPos = document.documentElement.scrollTop;
+    }
+    else if (typeof document.body != 'undefined') {
+        scrollPos = document.body.scrollTop;
+    }
+    document.cookie="scrollTop="+scrollPos; //存储滚动条位置到cookies中
+}
+
+window.onload = function()
+{
+    if(document.cookie.match(/scrollTop=([^;]+)(;|$)/)!=null){
+        var arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/); //cookies中不为空，则读取滚动条位置
+        document.documentElement.scrollTop=parseInt(arr[1]);
+        document.body.scrollTop=parseInt(arr[1]);
+    }
+}
   var xmlHttp;
   function showUser(str) {
       xmlHttp = GetXmlHttpObject()
@@ -166,6 +239,19 @@ require_once('footer.php');
       }
       var url = "getuser.php"
       url = url + "?c=" + str
+      url = url + "&sid=" + Math.random()
+      xmlHttp.onreadystatechange = stateChanged
+      xmlHttp.open("GET", url, true)
+      xmlHttp.send(null)
+  }
+  function deleteUser(str) {
+      xmlHttp = GetXmlHttpObject()
+      if (xmlHttp == null) {
+          alert("Browser does not support HTTP Request")
+          return
+      }
+      var url = "delete.php"
+      url = url + "?choice=" + str
       url = url + "&sid=" + Math.random()
       xmlHttp.onreadystatechange = stateChanged
       xmlHttp.open("GET", url, true)
