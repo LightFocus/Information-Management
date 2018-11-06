@@ -1,9 +1,0 @@
-section .caption-container p {
-	font-size: 14px;
-	font-weight: 500;
-}
-section .caption-container p.typography-caption-headline {
-	font-weight: 600;
-}
-
-@media only screen and (max-width: 735px) { html[lang=zh-CN] .main .large-text-center h2.product-tagline.headline-spacing.centeralign { padding-left: 0.3em; } }
