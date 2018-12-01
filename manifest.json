@@ -1,0 +1,11 @@
+{
+  "name": "URP",
+  "short_name": "URP",
+  "description": "A Database System",
+  "background_color": "#D5E0EB",
+  "theme_color": "#D5E0EB",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "scope": "\/"
+}
